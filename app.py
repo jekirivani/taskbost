@@ -19,7 +19,7 @@ from http.cookies import SimpleCookie
 from urllib.parse import parse_qs, urlparse, urlencode, quote, unquote
 from email.message import EmailMessage
 
-PORT = 8081
+PORT = int(os.environ.get("PORT", "8081")
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "taskbost.db")
 BASE_URL = os.environ.get("TASKBOST_BASE_URL", f"http://localhost:{PORT}")
