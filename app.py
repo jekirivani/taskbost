@@ -22,7 +22,7 @@ from email.message import EmailMessage
 PORT = int(os.environ.get("PORT", "8081")
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "taskbost.db")
-TASKBOST_BASE_URL=https://www.taskbost.my.id
+PORT = 8081
 
 # Akun admin tetap
 ADMIN_USER = "admin"
